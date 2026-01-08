@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <!-- ============================================
+         META TAGS - Document Information
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست کارهای انجام شده</title>
+    
+    <!-- ============================================
+         STYLESHEETS - External CSS Files
+         ============================================ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         MAIN CONTAINER - Application Wrapper
+         ============================================ -->
+    <div class="container">
+        <div class="todo-wrapper">
+            
+            <!-- ============================================
+                 HEADER SECTION - Page Title & Subtitle
+                 ============================================ -->
+            <div class="header">
+                <h1>📝 لیست کارهای من</h1>
+                <p class="subtitle">سازمان‌دهی کارهای روزانه</p>
+            </div>
+
+            <!-- ============================================
+                 ADD TODO SECTION - Input & Button
+                 ============================================ -->
+            <div class="add-todo-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        name="title" 
+                        class="todo-input" 
+                        placeholder="کار جدید را اضافه کنید..." 
+                        required
+                    >
+                    <a href="create.html" class="btn-add">➕ افزودن</a>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 FILTER SECTION - Filter Buttons
+                 ============================================ -->
+            <div class="filters">
+                <a href="#" class="filter-btn active">همه</a>
+                <a href="#" class="filter-btn">در حال انجام</a>
+                <a href="#" class="filter-btn">تکمیل شده</a>
+            </div>
+
+            <!-- ============================================
+                 TODO LIST SECTION - Display Items
+                 ============================================ -->
+            <div class="todos-list">
+                
+                <!-- TODO ITEM 1 - In Progress -->
+                <div class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox">
+                        <span class="todo-title">خرید مواد غذایی</span>
+                        <span class="todo-date">امروز</span>
+                    </div>
+                    <div class="todo-actions">
+                        <a href="edit.html" class="btn-edit" title="ویرایش">✏️</a>
+                        <button class="btn-delete" title="حذف">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- TODO ITEM 2 - Completed -->
+                <div class="todo-item completed">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox" checked>
+                        <span class="todo-title">درس ریاضی را بخوان</span>
+                        <span class="todo-date">دیروز</span>
+                    </div>
+                    <div class="todo-actions">
+                        <a href="edit.html" class="btn-edit" title="ویرایش">✏️</a>
+                        <button class="btn-delete" title="حذف">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- TODO ITEM 3 - In Progress -->
+                <div class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox">
+                        <span class="todo-title">تماس گرفتن با دوست</span>
+                        <span class="todo-date">فردا</span>
+                    </div>
+                    <div class="todo-actions">
+                        <a href="edit.html" class="btn-edit" title="ویرایش">✏️</a>
+                        <button class="btn-delete" title="حذف">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- TODO ITEM 4 - In Progress -->
+                <div class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox">
+                        <span class="todo-title">تمرین ورزشی</span>
+                        <span class="todo-date">امروز</span>
+                    </div>
+                    <div class="todo-actions">
+                        <a href="edit.html" class="btn-edit" title="ویرایش">✏️</a>
+                        <button class="btn-delete" title="حذف">🗑️</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- ============================================
+                 STATISTICS SECTION - Task Statistics
+                 ============================================ -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">کل کارها:</span>
+                    <span class="stat-value">4</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">تکمیل شده:</span>
+                    <span class="stat-value">1</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">باقی‌مانده:</span>
+                    <span class="stat-value">3</span>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 FOOTER SECTION - Copyright Information
+                 ============================================ -->
+            <div class="footer">
+                <p> لیست کارهای من</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

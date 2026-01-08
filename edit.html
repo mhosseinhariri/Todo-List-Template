@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <!-- ============================================
+         META TAGS - Document Information
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ویرایش کار</title>
+    
+    <!-- ============================================
+         STYLESHEETS - External CSS Files
+         ============================================ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         MAIN CONTAINER - Application Wrapper
+         ============================================ -->
+    <div class="container">
+        <div class="todo-wrapper">
+            
+            <!-- ============================================
+                 HEADER SECTION - Page Title & Subtitle
+                 ============================================ -->
+            <div class="header">
+                <h1>✏️ ویرایش کار</h1>
+                <p class="subtitle">جزئیات کار را به‌روزرسانی کنید</p>
+            </div>
+
+            <!-- ============================================
+                 EDIT FORM SECTION - Update Todo Form
+                 ============================================ -->
+            <form class="form-wrapper" action="#" method="POST">
+                
+                <!-- FORM GROUP - Title Field -->
+                <div class="form-group">
+                    <label for="title" class="form-label">عنوان کار</label>
+                    <input 
+                        type="text" 
+                        id="title"
+                        name="title" 
+                        class="form-input" 
+                        placeholder="عنوان کار..." 
+                        value="خرید مواد غذایی"
+                        required
+                    >
+                    <small class="form-hint">عنوان کار باید حداقل 3 کاراکتر باشد</small>
+                </div>
+
+                <!-- FORM GROUP - Description Field -->
+                <div class="form-group">
+                    <label for="description" class="form-label">توضیحات</label>
+                    <textarea 
+                        id="description"
+                        name="description" 
+                        class="form-textarea" 
+                        placeholder="توضیحات اضافی..."
+                        rows="4"
+                    >شیر، نان، تخم‌مرغ و میوه‌های تازه خریداری کن</textarea>
+                    <small class="form-hint">توضیحات کار را بنویسید</small>
+                </div>
+
+                <!-- FORM GROUP - Due Date Field -->
+                <div class="form-group">
+                    <label for="dueDate" class="form-label">تاریخ انجام</label>
+                    <input 
+                        type="date" 
+                        id="dueDate"
+                        name="dueDate" 
+                        class="form-input"
+                        value="2026-01-10"
+                    >
+                    <small class="form-hint">تاریخ انجام کار را انتخاب کنید</small>
+                </div>
+
+                <!-- FORM GROUP - Priority Select -->
+                <div class="form-group">
+                    <label for="priority" class="form-label">اولویت</label>
+                    <select id="priority" name="priority" class="form-select">
+                        <option value="low">⭕ کم</option>
+                        <option value="medium" selected>🟡 متوسط</option>
+                        <option value="high">🔴 زیاد</option>
+                    </select>
+                </div>
+
+                <!-- FORM GROUP - Status Select -->
+                <div class="form-group">
+                    <label for="status" class="form-label">وضعیت</label>
+                    <select id="status" name="status" class="form-select">
+                        <option value="pending">⏳ در حال انجام</option>
+                        <option value="completed">✅ تکمیل شده</option>
+                    </select>
+                </div>
+
+                <!-- ============================================
+                     FORM ACTIONS - Save, Delete & Cancel Buttons
+                     ============================================ -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">💾 ذخیره تغییرات</button>
+                    <button type="button" class="btn-delete-form" onclick="if(confirm('آیا می‌خواهید این کار را حذف کنید؟')) window.location.href='index.html'">🗑️ حذف کار</button>
+                    <a href="index.html" class="btn-cancel">❌ انصراف</a>
+                </div>
+                
+            </form>
+
+            <!-- ============================================
+                 INFO SECTION - Task Metadata
+                 ============================================ -->
+            <div class="form-info">
+                <p><strong>اطلاعات:</strong></p>
+                <ul>
+                    <li>ایجاد شده: 2026-01-07</li>
+                    <li>آخرین ویرایش: 2026-01-08</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

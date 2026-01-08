@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <!-- ============================================
+         META TAGS - Document Information
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افزودن کار جدید</title>
+    
+    <!-- ============================================
+         STYLESHEETS - External CSS Files
+         ============================================ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         MAIN CONTAINER - Application Wrapper
+         ============================================ -->
+    <div class="container">
+        <div class="todo-wrapper">
+            
+            <!-- ============================================
+                 HEADER SECTION - Page Title & Subtitle
+                 ============================================ -->
+            <div class="header">
+                <h1>➕ کار جدید</h1>
+                <p class="subtitle">یک کار جدید به لیست خود اضافه کنید</p>
+            </div>
+
+            <!-- ============================================
+                 CREATE FORM SECTION - Add New Todo Form
+                 ============================================ -->
+            <form class="form-wrapper" action="#" method="POST">
+                
+                <!-- FORM GROUP - Title Field -->
+                <div class="form-group">
+                    <label for="title" class="form-label">عنوان کار</label>
+                    <input 
+                        type="text" 
+                        id="title"
+                        name="title" 
+                        class="form-input" 
+                        placeholder="مثال: خرید مواد غذایی..." 
+                        required
+                    >
+                    <small class="form-hint">عنوان کار باید حداقل 3 کاراکتر باشد</small>
+                </div>
+
+                <!-- FORM GROUP - Description Field -->
+                <div class="form-group">
+                    <label for="description" class="form-label">توضیحات</label>
+                    <textarea 
+                        id="description"
+                        name="description" 
+                        class="form-textarea" 
+                        placeholder="توضیحات اضافی (اختیاری)..."
+                        rows="4"
+                    ></textarea>
+                    <small class="form-hint">توضیحات کار را بنویسید (اختیاری)</small>
+                </div>
+
+                <!-- FORM GROUP - Due Date Field -->
+                <div class="form-group">
+                    <label for="dueDate" class="form-label">تاریخ انجام</label>
+                    <input 
+                        type="date" 
+                        id="dueDate"
+                        name="dueDate" 
+                        class="form-input"
+                    >
+                    <small class="form-hint">تاریخ انجام کار را انتخاب کنید</small>
+                </div>
+
+                <!-- FORM GROUP - Priority Select -->
+                <div class="form-group">
+                    <label for="priority" class="form-label">اولویت</label>
+                    <select id="priority" name="priority" class="form-select">
+                        <option value="low">⭕ کم</option>
+                        <option value="medium" selected>🟡 متوسط</option>
+                        <option value="high">🔴 زیاد</option>
+                    </select>
+                </div>
+
+                <!-- ============================================
+                     FORM ACTIONS - Submit & Cancel Buttons
+                     ============================================ -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">✅ افزودن کار</button>
+                    <a href="index.html" class="btn-cancel">❌ انصراف</a>
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
